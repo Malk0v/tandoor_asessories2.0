@@ -58,7 +58,7 @@
           "" +
           '<img src="' +
           p.image +
-          '" alt="' +
+          ' " loading="lazy alt="' +
           p.name +
           '">' +
           "<h3>" +
