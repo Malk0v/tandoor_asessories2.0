@@ -61,23 +61,15 @@
         alert("✅ Замовлення успішно надіслано!");
         // очистка корзины
         localStorage.removeItem("cart");
-        cart = []; // глобальная переменная cart из cart.js
+        // cart = []; // глобальная переменная cart из cart.js
         window.cart = cart; // синхронизация
 
-        // перерендер корзины
-        if (typeof renderCart === "function") renderCart();
+        localStorage.removeItem("cart");
+        document.getElementById("cart-items").innerHTML = "";
+        document.getElementById("cart-total").textContent = "";
+        nameInput.value = "";
+        phoneInput.value = "";
         document.getElementById("cart-count").textContent = "0";
-
-        // localStorage.removeItem("cart");
-        // document.getElementById("cart-items").innerHTML = "";
-        // document.getElementById("cart-total").textContent = "";
-        // nameInput.value = "";
-        // phoneInput.value = "";
-        //document.getElementById("cart-count").textContent = "0";
-
-        // ⤵️ плавное закрытие корзины
-        if (window.closeCartModal) window.closeCartModal();
-        // ждём, пока отработает анимация
       })
       .catch(() => alert("❌ Помилка при відправці замовлення."));
   });
