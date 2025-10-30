@@ -23,6 +23,8 @@ header {
   margin: 0;
   font-weight: 500;
   letter-spacing: 0.4px;
+  font-style: italic;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .controls {
@@ -196,4 +198,49 @@ header {
   opacity: 0;
   transform: translateY(-20px);
   pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    /* background-color: #413636; */
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  header {
+    display: block;
+    width: 100%;
+  }
+
+  h1 {
+    max-width: 750px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .search-input {
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #category-select {
+    padding: 10px;
+    margin: 5px;
+  }
+
+  #cart-btn {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+  }
 }
