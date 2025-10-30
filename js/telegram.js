@@ -11,6 +11,7 @@
   const nameInput = document.getElementById("customer-name");
   const phoneInput = document.getElementById("customer-phone");
   const postInput = document.getElementById("customer-post");
+  const postText = document.getElementById("customer-text");
   const modal = document.getElementById("cart-modal");
 
   if (!sendBtn) return;
@@ -20,6 +21,7 @@
     const name = nameInput.value.trim();
     const phone = phoneInput.value.trim();
     const post = postInput.value.trim();
+    const text = postText.value.trim();
 
     if (!cart.length) {
       alert("Корзина порожня!");
@@ -34,7 +36,8 @@
     let message = `<b>🛍 Нове замовлення</b>\n\n`;
     message += `<b>👤 Ім’я:</b> ${name}\n`;
     message += `<b>📞 Телефон:</b> ${phone}\n\n`;
-    message += `<b>📞 Відправляти:</b> ${post}\n\n`;
+    message += `<b>📦В ідправляти:</b> ${post}\n\n`;
+    message += `<b>💬 Коментар:</b> ${text}\n\n`;
     message += `<b>Товари:</b>\n`;
 
     let total = 0;
@@ -60,16 +63,17 @@
       .then(() => {
         alert("✅ Замовлення успішно надіслано!");
         // очистка корзины
-        localStorage.removeItem("cart");
+        // localStorage.removeItem("cart");
         // cart = []; // глобальная переменная cart из cart.js
-        window.cart = cart; // синхронизация
+        window.cart = []; // синхронизация
 
         localStorage.removeItem("cart");
         document.getElementById("cart-items").innerHTML = "";
         document.getElementById("cart-total").textContent = "";
-        nameInput.value = "";
-        phoneInput.value = "";
+        // nameInput.value = "";
+        // phoneInput.value = "";
         document.getElementById("cart-count").textContent = "0";
+        if (window.closeCartModal) window.closeCartModal();
       })
       .catch(() => alert("❌ Помилка при відправці замовлення."));
   });
