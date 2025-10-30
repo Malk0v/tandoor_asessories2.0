@@ -8,7 +8,7 @@ body {
 
 header {
   display: flex;
-  gap: 1rem;
+  /* gap: 1rem; */
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
@@ -27,16 +27,16 @@ header {
 
 .controls {
   display: flex;
-  gap: 0.75rem;
+  /* gap: 0.75rem; */
   align-items: center;
-  flex: 1;
+  /* flex: 1; */
   justify-content: center;
 }
 
 #search-input {
   width: 320px;
   max-width: 40%;
-  padding: 0.5rem 0.75rem;
+  /* padding: 0.5rem 0.75rem; */
   border-radius: 12px;
   border: 1px solid #e6e6e6;
   background: #fafafa;
@@ -49,7 +49,7 @@ header {
 }
 
 #category-select {
-  padding: 0.5rem 0.75rem;
+  /* padding: 0.5rem 0.75rem; */
   border-radius: 12px;
   border: 1px solid #e6e6e6;
   background: #fafafa;
@@ -159,4 +159,39 @@ header {
   align-items: center;
   padding: 0.6rem 0;
   border-bottom: 1px solid #f5f5f5;
+}
+
+#customer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin: 1rem 0;
+}
+
+#customer-info input {
+  padding: 0.6rem 0.8rem;
+  border-radius: 10px;
+  border: 1px solid #e6e6e6;
+  background: #fafafa;
+  font-size: 0.95rem;
+}
+
+/* ===== АНИМАЦИЯ МОДАЛЬНОЙ КОРЗИНЫ ===== */
+#cart-modal {
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#cart-modal.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+#cart-modal.hidden {
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
 }
