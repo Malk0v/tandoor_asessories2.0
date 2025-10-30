@@ -1,36 +1,574 @@
 window.productsData = [
   {
-    "id": 1,
-    "name": "Оправа Ray-Ban RB2140",
-    "description": "Класична модель Wayfarer",
-    "image": "img/rayban.jpg",
-    "options": [
+    id: 1,
+    name: "Гак",
+    description: "Гак металевий",
+    image: "img/cru.jpg",
+    options: [
       {
-        "diameter": "48 мм",
-        "price": 3200
+        diameter: "Звичайний",
+        price: 100,
       },
       {
-        "diameter": "52 мм",
-        "price": 3500
-      }
+        diameter: "Великий",
+        price: 150,
+      },
+      {
+        diameter: "Тройний",
+        price: 300,
+      },
     ],
-    "category": "Оправа"
+    category: "Гак",
   },
   {
-    "id": 2,
-    "name": "Оправа Oakley OX3218",
-    "description": "Легка титановa оправа",
-    "image": "img/oakley.jpg",
-    "options": [
+    id: 2,
+    name: "Конус",
+    description: "Насадка для приготування птиці",
+    image: "img/con.jpg",
+    options: [
       {
-        "diameter": "50 мм",
-        "price": 2900
+        diameter: "1",
+        price: 100,
+      },
+    ],
+    category: "Насадка",
+  },
+  {
+    id: 3,
+    name: "Насадка для Птиці",
+    description:
+      "ВАЖЛИВО! вказаний розмір сковорідки, загальний діаметр виробу на 1см більший",
+    image: "img/pticha.jpg",
+    options: [
+      {
+        diameter: "без сковорідки",
+        price: 600,
       },
       {
-        "diameter": "54 мм",
-        "price": 3100
-      }
+        diameter: "+ сковорідка 21см",
+        price: 1000,
+      },
+      {
+        diameter: "+ сковорідка 23см",
+        price: 1100,
+      },
+      {
+        diameter: "+ сковорідка 26 см",
+        price: 1150,
+      },
+      {
+        diameter: "+ сковорідка 28 см",
+        price: 1200,
+      },
+      {
+        diameter: "+ сковорідка 30 см",
+        price: 1300,
+      },
+      {
+        diameter: "+ сковорідка 32 см",
+        price: 1350,
+      },
+      {
+        diameter: "+ сковорідка 34 см",
+        price: 1400,
+      },
+      {
+        diameter: "+ сковорідка 36 см",
+        price: 1800,
+      },
+      {
+        diameter: "+ сковорідка 40 см",
+        price: 2200,
+      },
     ],
-    "category": "Оправа"
-  }
+    category: "Насадка",
+  },
+  {
+    id: 4,
+    name: "Насадка Ялинка",
+    description:
+      "ВАЖЛИВО! вказаний розмір сковорідки, загальний діаметр виробу на 1см більший",
+    image: "img/el.jpg",
+    options: [
+      {
+        diameter: "без сковорідки",
+        price: 600,
+      },
+      {
+        diameter: "2+ сковорідка 21 см",
+        price: 1000,
+      },
+      {
+        diameter: "+ сковорідка 23 см",
+        price: 1100,
+      },
+      {
+        diameter: "+ сковорідка 26",
+        price: 1150,
+      },
+      {
+        diameter: "+ сковорідка 28 см",
+        price: 1200,
+      },
+      {
+        diameter: "+ сковорідка 30 см",
+        price: 1300,
+      },
+      {
+        diameter: "+ сковорідка 32 см",
+        price: 1350,
+      },
+      {
+        diameter: "+ сковорідка 34 см",
+        price: 1400,
+      },
+      {
+        diameter: "+ сковорідка 36 см",
+        price: 1800,
+      },
+      {
+        diameter: "+ сковорідка 40 см",
+        price: 2200,
+      },
+    ],
+    category: "Насадка",
+  },
+  {
+    id: 5,
+    name: "Насадка Шампурниця",
+    description:
+      "ВАЖЛИВО! вказаний розмір сковорідки, загальний діаметр виробу на 1см більший",
+    image: "img/sha.jpg",
+    options: [
+      {
+        diameter: "без сковорідки",
+        price: 700,
+      },
+      {
+        diameter: "2+ сковорідка 21 см",
+        price: 1100,
+      },
+      {
+        diameter: "+ сковорідка 23 см",
+        price: 1200,
+      },
+      {
+        diameter: "+ сковорідка 26",
+        price: 1250,
+      },
+      {
+        diameter: "+ сковорідка 28 см",
+        price: 1300,
+      },
+      {
+        diameter: "+ сковорідка 30 см",
+        price: 1400,
+      },
+      {
+        diameter: "+ сковорідка 32 см",
+        price: 1450,
+      },
+      {
+        diameter: "+ сковорідка 34 см",
+        price: 1500,
+      },
+      {
+        diameter: "+ сковорідка 36 см",
+        price: 1900,
+      },
+      {
+        diameter: "+ сковорідка 40 см",
+        price: 2300,
+      },
+    ],
+    category: "Насадка",
+  },
+  {
+    id: 6,
+    name: "Набір 4в1",
+    description:
+      "ВАЖЛИВО! вказаний розмір сковорідки, загальний діаметр виробу на 2см більший",
+    image: "img/4in1.jpg",
+    options: [
+      {
+        diameter: "21 см",
+        price: 1100,
+      },
+      {
+        diameter: "23 см",
+        price: 1300,
+      },
+      {
+        diameter: "26 см",
+        price: 1400,
+      },
+      {
+        diameter: "28 см",
+        price: 1500,
+      },
+      {
+        diameter: "30 см",
+        price: 1600,
+      },
+      {
+        diameter: "32 см",
+        price: 1700,
+      },
+      {
+        diameter: "34 см",
+        price: 1750,
+      },
+      {
+        diameter: "36 см",
+        price: 2200,
+      },
+      {
+        diameter: "40 см",
+        price: 2700,
+      },
+    ],
+    category: "Набір 4в1",
+  },
+  {
+    id: 7,
+    name: "Сітка звичайна 2х рівнева",
+    description:
+      "ВАЖЛИВО! вказаний розмір рабочої поверхні, загальний діаметр виробу на 2см більший",
+    image: "img/2x.jpg",
+    options: [
+      {
+        diameter: "21",
+        price: 100,
+      },
+      {
+        diameter: "23",
+        price: 150,
+      },
+      {
+        diameter: "26",
+        price: 300,
+      },
+      {
+        diameter: "28",
+        price: 300,
+      },
+      {
+        diameter: "30",
+        price: 300,
+      },
+      {
+        diameter: "32",
+        price: 300,
+      },
+      {
+        diameter: "34",
+        price: 300,
+      },
+      {
+        diameter: "36",
+        price: 300,
+      },
+      {
+        diameter: "40",
+        price: 300,
+      },
+    ],
+    category: "Сітка",
+  },
+  {
+    id: 8,
+    name: "Сітка звичайна 3х рівнева",
+    description:
+      "ВАЖЛИВО! вказаний розмір рабочої поверхні, загальний діаметр виробу на 2см більший",
+    image: "img/3x.jpg",
+    options: [
+      {
+        diameter: "21",
+        price: 100,
+      },
+      {
+        diameter: "23",
+        price: 150,
+      },
+      {
+        diameter: "26",
+        price: 300,
+      },
+      {
+        diameter: "28",
+        price: 300,
+      },
+      {
+        diameter: "30",
+        price: 300,
+      },
+      {
+        diameter: "32",
+        price: 300,
+      },
+      {
+        diameter: "34",
+        price: 300,
+      },
+      {
+        diameter: "36",
+        price: 300,
+      },
+      {
+        diameter: "40",
+        price: 300,
+      },
+    ],
+    category: "Сітка",
+  },
+  {
+    id: 9,
+    name: "Сітка 2 яруси модель 1",
+    description:
+      "ВАЖЛИВО! вказаний розмір сковорідки, загальний діаметр виробу на 1см більший",
+    image: "img/s2xi.jpg",
+    options: [
+      {
+        diameter: "21",
+        price: 100,
+      },
+      {
+        diameter: "23",
+        price: 150,
+      },
+      {
+        diameter: "26",
+        price: 300,
+      },
+      {
+        diameter: "28",
+        price: 300,
+      },
+      {
+        diameter: "30",
+        price: 300,
+      },
+      {
+        diameter: "32",
+        price: 300,
+      },
+      {
+        diameter: "34",
+        price: 300,
+      },
+      {
+        diameter: "36",
+        price: 300,
+      },
+      {
+        diameter: "40",
+        price: 300,
+      },
+    ],
+    category: "Сітка",
+  },
+  {
+    id: 10,
+    name: "Сітка 3 яруси модель 1",
+    description:
+      "ВАЖЛИВО! вказаний розмір сковорідки, загальний діаметр виробу на 1см більший",
+    image: "img/s3xi.jpg",
+    options: [
+      {
+        diameter: "21",
+        price: 100,
+      },
+      {
+        diameter: "23",
+        price: 150,
+      },
+      {
+        diameter: "26",
+        price: 300,
+      },
+      {
+        diameter: "28",
+        price: 300,
+      },
+      {
+        diameter: "30",
+        price: 300,
+      },
+      {
+        diameter: "32",
+        price: 300,
+      },
+      {
+        diameter: "34",
+        price: 300,
+      },
+      {
+        diameter: "36",
+        price: 300,
+      },
+      {
+        diameter: "40",
+        price: 300,
+      },
+    ],
+    category: "Сітка",
+  },
+  {
+    id: 11,
+    name: "Сітка 2 яруси модель 3",
+    description:
+      "ВАЖЛИВО! вказаний розмір сковорідки, загальний діаметр виробу на 2см більший",
+    image: "img/s2xiii.jpg",
+    options: [
+      {
+        diameter: "21",
+        price: 100,
+      },
+      {
+        diameter: "23",
+        price: 150,
+      },
+      {
+        diameter: "26",
+        price: 300,
+      },
+      {
+        diameter: "28",
+        price: 300,
+      },
+      {
+        diameter: "30",
+        price: 300,
+      },
+      {
+        diameter: "32",
+        price: 300,
+      },
+      {
+        diameter: "34",
+        price: 300,
+      },
+      {
+        diameter: "36",
+        price: 300,
+      },
+      {
+        diameter: "40",
+        price: 300,
+      },
+    ],
+    category: "Сітка",
+  },
+  {
+    id: 12,
+    name: "Сітка 3 яруси модель 3",
+    description:
+      "ВАЖЛИВО! вказаний розмір сковорідки, загальний діаметр виробу на 2см більший",
+    image: "img/s3xiii.jpg",
+    options: [
+      {
+        diameter: "21",
+        price: 100,
+      },
+      {
+        diameter: "23",
+        price: 150,
+      },
+      {
+        diameter: "26",
+        price: 300,
+      },
+      {
+        diameter: "28",
+        price: 300,
+      },
+      {
+        diameter: "30",
+        price: 300,
+      },
+      {
+        diameter: "32",
+        price: 300,
+      },
+      {
+        diameter: "34",
+        price: 300,
+      },
+      {
+        diameter: "36",
+        price: 300,
+      },
+      {
+        diameter: "40",
+        price: 300,
+      },
+    ],
+    category: "Сітка",
+  },
+  {
+    id: 13,
+    name: "Сковорідка чугунна",
+    description: "Чугуна сковорідка в асертименті",
+    image: "img/patelnia.jpg",
+    options: [
+      {
+        diameter: "21",
+        price: 100,
+      },
+      {
+        diameter: "23",
+        price: 150,
+      },
+      {
+        diameter: "26",
+        price: 300,
+      },
+      {
+        diameter: "28",
+        price: 300,
+      },
+      {
+        diameter: "30",
+        price: 300,
+      },
+      {
+        diameter: "32",
+        price: 300,
+      },
+      {
+        diameter: "34",
+        price: 300,
+      },
+      {
+        diameter: "36",
+        price: 300,
+      },
+      {
+        diameter: "40",
+        price: 300,
+      },
+    ],
+    category: "Сковорідка",
+  },
+  {
+    id: 14,
+    name: "Чохол",
+    description: "Чохол для тандиру з якісноі не промокаючоі тканини",
+    image: "img/case.jpg",
+    options: [
+      {
+        diameter: "висота 90см. Ширина 90см",
+        price: 500,
+      },
+      {
+        diameter: "висота 100см. Шириша 100см",
+        price: 600,
+      },
+      {
+        diameter: "Висота 110см. Ширина 120см",
+        price: 800,
+      },
+    ],
+    category: "Чохол",
+  },
 ];
