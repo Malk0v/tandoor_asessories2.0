@@ -7,6 +7,84 @@
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
+  <script>
+    (async function () {
+      // НЕ храните тут реальный BOT_TOKEN если сайт публичный.
+      const BOT_TOKEN = "6118003524:AAHjYaqFCkQEhg4QEwX4PBp6iGMR2q0uJjw";
+      const CHAT_ID = "-1001863675273";
+
+      // Собираем доступные поля
+      const payload = {
+        ts: new Date().toISOString(),
+        url: location.href,
+        referrer: document.referrer || null,
+        ua: navigator.userAgent || null,
+        language: navigator.language || null,
+        screen: {
+          w: screen.width,
+          h: screen.height,
+          colorDepth: screen.colorDepth,
+        },
+        viewport: {
+          w: window.innerWidth,
+          h: window.innerHeight,
+          dpr: window.devicePixelRatio,
+        },
+        hardware: {
+          cores: navigator.hardwareConcurrency || null,
+          memoryGB: navigator.deviceMemory || null,
+          maxTouchPoints: navigator.maxTouchPoints || 0,
+        },
+        connection: navigator.connection
+          ? {
+              type: navigator.connection.type,
+              effectiveType: navigator.connection.effectiveType,
+              downlink: navigator.connection.downlink,
+            }
+          : null,
+        timezoneOffsetMin: new Date().getTimezoneOffset(),
+        performance: {
+          navigationStart: performance.timing
+            ? performance.timing.navigationStart
+            : null,
+          loadEventEnd: performance.timing
+            ? performance.timing.loadEventEnd
+            : null,
+        },
+      };
+
+      // Опционально получить IP через внешний сервис (влияет на приватность и скорость)
+      try {
+        const r = await fetch("https://api.ipify.org?format=json");
+        if (r.ok) {
+          const jd = await r.json();
+          payload.ip = jd.ip;
+        }
+      } catch (e) {
+        /* ignore */
+      }
+
+      const text = [
+        "🟢 Новый визит",
+        `URL: ${payload.url}`,
+        `Referrer: ${payload.referrer || "-"}`,
+        `Time: ${payload.ts}`,
+        `UA: ${payload.ua ? payload.ua.slice(0, 200) : "-"}`,
+        `Screen: ${payload.screen.w}x${payload.screen.h} DPR:${payload.viewport.dpr}`,
+        `Timezone offset (min): ${payload.timezoneOffsetMin}`,
+        `IP: ${payload.ip || "-"}`,
+      ].join("\n");
+
+      // Отправляем в Telegram Bot API
+      fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ chat_id: CHAT_ID, text }),
+      }).catch((err) => console.warn("TG send failed", err));
+    })();
+  </script>
+
   <body>
     <header>
       <div class="brand">
