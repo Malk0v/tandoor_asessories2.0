@@ -42,43 +42,43 @@ window.productsData = [
     options: [
       {
         diameter: "без сковорідки",
-        price: 500,
+        price: 600,
       },
       {
         diameter: "+ сковорідка 21см",
-        price: 900,
-      },
-      {
-        diameter: "+ сковорідка 23см",
-        price: 1000,
-      },
-      {
-        diameter: "+ сковорідка 26 см",
         price: 1100,
       },
       {
-        diameter: "+ сковорідка 28 см",
-        price: 1150,
-      },
-      {
-        diameter: "+ сковорідка 30 см",
+        diameter: "+ сковорідка 23см",
         price: 1200,
       },
       {
-        diameter: "+ сковорідка 32 см",
-        price: 1250,
-      },
-      {
-        diameter: "+ сковорідка 34 см",
+        diameter: "+ сковорідка 26 см",
         price: 1300,
       },
       {
+        diameter: "+ сковорідка 28 см",
+        price: 1350,
+      },
+      {
+        diameter: "+ сковорідка 30 см",
+        price: 1400,
+      },
+      {
+        diameter: "+ сковорідка 32 см",
+        price: 1450,
+      },
+      {
+        diameter: "+ сковорідка 34 см",
+        price: 1500,
+      },
+      {
         diameter: "+ сковорідка 36 см",
-        price: 1800,
+        price: 1900,
       },
       {
         diameter: "+ сковорідка 40 см",
-        price: 2200,
+        price: 2300,
       },
     ],
     category: "Насадка",
@@ -92,43 +92,43 @@ window.productsData = [
     options: [
       {
         diameter: "без сковорідки",
-        price: 500,
+        price: 600,
       },
       {
         diameter: "+ сковорідка 21см",
-        price: 900,
-      },
-      {
-        diameter: "+ сковорідка 23см",
-        price: 1000,
-      },
-      {
-        diameter: "+ сковорідка 26 см",
         price: 1100,
       },
       {
-        diameter: "+ сковорідка 28 см",
-        price: 1150,
-      },
-      {
-        diameter: "+ сковорідка 30 см",
+        diameter: "+ сковорідка 23см",
         price: 1200,
       },
       {
-        diameter: "+ сковорідка 32 см",
-        price: 1250,
-      },
-      {
-        diameter: "+ сковорідка 34 см",
+        diameter: "+ сковорідка 26 см",
         price: 1300,
       },
       {
+        diameter: "+ сковорідка 28 см",
+        price: 1350,
+      },
+      {
+        diameter: "+ сковорідка 30 см",
+        price: 1400,
+      },
+      {
+        diameter: "+ сковорідка 32 см",
+        price: 1450,
+      },
+      {
+        diameter: "+ сковорідка 34 см",
+        price: 1500,
+      },
+      {
         diameter: "+ сковорідка 36 см",
-        price: 1800,
+        price: 1900,
       },
       {
         diameter: "+ сковорідка 40 см",
-        price: 2200,
+        price: 2300,
       },
     ],
     category: "Насадка",
@@ -142,43 +142,43 @@ window.productsData = [
     options: [
       {
         diameter: "без сковорідки",
-        price: 650,
+        price: 750,
       },
       {
         diameter: "+ сковорідка 21см",
-        price: 1050,
-      },
-      {
-        diameter: "+ сковорідка 23см",
-        price: 1150,
-      },
-      {
-        diameter: "+ сковорідка 26 см",
         price: 1250,
       },
       {
-        diameter: "+ сковорідка 28 см",
-        price: 1300,
-      },
-      {
-        diameter: "+ сковорідка 30 см",
+        diameter: "+ сковорідка 23см",
         price: 1350,
       },
       {
-        diameter: "+ сковорідка 32 см",
-        price: 1400,
-      },
-      {
-        diameter: "+ сковорідка 34 см",
+        diameter: "+ сковорідка 26 см",
         price: 1450,
       },
       {
+        diameter: "+ сковорідка 28 см",
+        price: 1500,
+      },
+      {
+        diameter: "+ сковорідка 30 см",
+        price: 1550,
+      },
+      {
+        diameter: "+ сковорідка 32 см",
+        price: 1550,
+      },
+      {
+        diameter: "+ сковорідка 34 см",
+        price: 1700,
+      },
+      {
         diameter: "+ сковорідка 36 см",
-        price: 1950,
+        price: 2050,
       },
       {
         diameter: "+ сковорідка 40 см",
-        price: 2350,
+        price: 2450,
       },
     ],
     category: "Насадка",
@@ -192,39 +192,39 @@ window.productsData = [
     options: [
       {
         diameter: "21 см",
-        price: 1050,
+        price: 1200,
       },
       {
         diameter: "23 см",
-        price: 1250,
-      },
-      {
-        diameter: "26 см",
         price: 1350,
       },
       {
-        diameter: "28 см",
+        diameter: "26 см",
         price: 1450,
       },
       {
-        diameter: "30 см",
+        diameter: "28 см",
         price: 1600,
       },
       {
-        diameter: "32 см",
-        price: 1650,
-      },
-      {
-        diameter: "34 см",
+        diameter: "30 см",
         price: 1700,
       },
       {
+        diameter: "32 см",
+        price: 1800,
+      },
+      {
+        diameter: "34 см",
+        price: 1900,
+      },
+      {
         diameter: "36 см",
-        price: 2100,
+        price: 2400,
       },
       {
         diameter: "40 см",
-        price: 2500,
+        price: 2800,
       },
     ],
     category: "Набір 4в1",
@@ -238,39 +238,39 @@ window.productsData = [
     options: [
       {
         diameter: "21",
-        price: 500,
-      },
-      {
-        diameter: "23",
         price: 600,
       },
       {
-        diameter: "26",
+        diameter: "23",
         price: 700,
       },
       {
-        diameter: "28",
+        diameter: "26",
         price: 800,
       },
       {
-        diameter: "30",
+        diameter: "28",
         price: 900,
       },
       {
-        diameter: "32",
+        diameter: "30",
         price: 1000,
       },
       {
-        diameter: "34",
-        price: 1050,
+        diameter: "32",
+        price: 1100,
       },
       {
-        diameter: "36",
+        diameter: "34",
         price: 1150,
       },
       {
+        diameter: "36",
+        price: 1250,
+      },
+      {
         diameter: "40",
-        price: 1300,
+        price: 1400,
       },
     ],
     category: "Сітка",
@@ -284,39 +284,39 @@ window.productsData = [
     options: [
       {
         diameter: "21",
-        price: 850,
+        price: 950,
       },
       {
         diameter: "23",
-        price: 900,
-      },
-      {
-        diameter: "26",
         price: 1000,
       },
       {
-        diameter: "28",
+        diameter: "26",
         price: 1100,
       },
       {
-        diameter: "30",
+        diameter: "28",
         price: 1200,
       },
       {
-        diameter: "32",
+        diameter: "30",
         price: 1300,
       },
       {
-        diameter: "34",
+        diameter: "32",
         price: 1400,
       },
       {
+        diameter: "34",
+        price: 1500,
+      },
+      {
         diameter: "36",
-        price: 1600,
+        price: 1700,
       },
       {
         diameter: "40",
-        price: 1700,
+        price: 1800,
       },
     ],
     category: "Сітка",
@@ -330,39 +330,39 @@ window.productsData = [
     options: [
       {
         diameter: "21",
-        price: 1300,
+        price: 1600,
       },
       {
         diameter: "23",
-        price: 1450,
-      },
-      {
-        diameter: "26",
-        price: 1650,
-      },
-      {
-        diameter: "28",
         price: 1700,
       },
       {
-        diameter: "30",
+        diameter: "26",
         price: 1800,
       },
       {
-        diameter: "32",
+        diameter: "28",
         price: 1900,
       },
       {
+        diameter: "30",
+        price: 2000,
+      },
+      {
+        diameter: "32",
+        price: 2200,
+      },
+      {
         diameter: "34",
-        price: 2100,
+        price: 2400,
       },
       {
         diameter: "36",
-        price: 2500,
+        price: 2800,
       },
       {
         diameter: "40",
-        price: 3100,
+        price: 3200,
       },
     ],
     category: "Сітка",
@@ -376,39 +376,39 @@ window.productsData = [
     options: [
       {
         diameter: "21",
-        price: 1500,
+        price: 1700,
       },
       {
         diameter: "23",
-        price: 1600,
-      },
-      {
-        diameter: "26",
         price: 1900,
       },
       {
+        diameter: "26",
+        price: 2100,
+      },
+      {
         diameter: "28",
-        price: 2000,
+        price: 2200,
       },
       {
         diameter: "30",
-        price: 2150,
-      },
-      {
-        diameter: "32",
         price: 2300,
       },
       {
+        diameter: "32",
+        price: 2450,
+      },
+      {
         diameter: "34",
-        price: 2400,
+        price: 2600,
       },
       {
         diameter: "36",
-        price: 3000,
+        price: 3100,
       },
       {
         diameter: "40",
-        price: 3400,
+        price: 3500,
       },
     ],
     category: "Сітка",
@@ -422,39 +422,39 @@ window.productsData = [
     options: [
       {
         diameter: "21",
-        price: 1600,
-      },
-      {
-        diameter: "23",
         price: 1700,
       },
       {
-        diameter: "26",
+        diameter: "23",
         price: 1800,
       },
       {
-        diameter: "28",
+        diameter: "26",
         price: 1900,
       },
       {
-        diameter: "30",
-        price: 2100,
+        diameter: "28",
+        price: 2000,
       },
       {
-        diameter: "32",
+        diameter: "30",
         price: 2200,
       },
       {
+        diameter: "32",
+        price: 2350,
+      },
+      {
         diameter: "34",
-        price: 2300,
+        price: 2550,
       },
       {
         diameter: "36",
-        price: 2700,
+        price: 2950,
       },
       {
         diameter: "40",
-        price: 3200,
+        price: 3400,
       },
     ],
     category: "Сітка",
@@ -468,31 +468,31 @@ window.productsData = [
     options: [
       {
         diameter: "21",
-        price: 1700,
-      },
-      {
-        diameter: "23",
         price: 1900,
       },
       {
-        diameter: "26",
+        diameter: "23",
         price: 2100,
       },
       {
-        diameter: "28",
+        diameter: "26",
         price: 2200,
       },
       {
-        diameter: "30",
+        diameter: "28",
         price: 2300,
       },
       {
-        diameter: "32",
+        diameter: "30",
         price: 2400,
       },
       {
+        diameter: "32",
+        price: 2600,
+      },
+      {
         diameter: "34",
-        price: 2650,
+        price: 2800,
       },
       {
         diameter: "36",
@@ -513,31 +513,31 @@ window.productsData = [
     options: [
       {
         diameter: "21",
-        price: 400,
+        price: 450,
       },
       {
         diameter: "23",
-        price: 500,
+        price: 550,
       },
       {
         diameter: "26",
-        price: 600,
-      },
-      {
-        diameter: "28",
         price: 650,
       },
       {
-        diameter: "30",
+        diameter: "28",
         price: 700,
       },
       {
-        diameter: "32",
+        diameter: "30",
         price: 750,
       },
       {
-        diameter: "34",
+        diameter: "32",
         price: 800,
+      },
+      {
+        diameter: "34",
+        price: 900,
       },
       {
         diameter: "36",
@@ -562,11 +562,11 @@ window.productsData = [
       },
       {
         diameter: "висота 100см. Шириша 100см",
-        price: 550,
+        price: 600,
       },
       {
         diameter: "Висота 110см. Ширина 120см",
-        price: 750,
+        price: 800,
       },
     ],
     category: "Чохол",
