@@ -1,4 +1,13 @@
 // cart.js
+
+function customAlert(message) {
+  const alertBox = document.createElement("div");
+  alertBox.className = "custom-alert";
+  alertBox.textContent = message;
+  document.body.appendChild(alertBox);
+  setTimeout(() => alertBox.remove(), 3000);
+}
+
 var cart = JSON.parse(localStorage.getItem("cart") || "[]");
 
 function updateCartCount() {
@@ -10,7 +19,8 @@ function addToCart(id) {
   var product = (window.products || []).find(function (p) {
     return p.id === id;
   });
-  if (!product) return alert("Товар не знайдено");
+  if (!product) return customAlert("Товар не знайдено");
+  //alert("Товар не знайдено");
 
   var select = document.getElementById("opt-" + id);
   var price = Number(select.value);
@@ -25,7 +35,8 @@ function addToCart(id) {
 
   localStorage.setItem("cart", JSON.stringify(cart));
   updateCartCount();
-  alert("Додано до корзини");
+  customAlert("Додано до корзини ✅");
+  // alert("Додано до корзини");
 }
 
 function renderCart() {

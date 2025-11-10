@@ -1,7 +1,18 @@
 // var token = "6118003524:AAHjYaqFCkQEhg4QEwX4PBp6iGMR2q0uJjw";
 //     var chatId = "-1001863675273";
 
+const { cart, updateCartCount } = require("./cart");
+
 // telegram.js — отправка заказа с именем и телефоном
+
+function customAlert(message) {
+  const alertBox = document.createElement("div");
+  alertBox.className = "custom-alert";
+  alertBox.textContent = message;
+  document.body.appendChild(alertBox);
+  setTimeout(() => alertBox.remove(), 3000);
+}
+
 (function () {
   const TOKEN = "6118003524:AAHjYaqFCkQEhg4QEwX4PBp6iGMR2q0uJjw"; // ← подставь свой токен
   const CHAT_ID = "-1001863675273"; // ← подставь свой chat_id
@@ -29,7 +40,8 @@
     }
 
     if (!name || !phone || !post) {
-      alert("Будь ласка, введіть ім’я та телефон та віділення пошти.");
+      customAlert("Будь ласка, введіть ім’я та телефон та віділення пошти ‼️");
+      // alert("Будь ласка, введіть ім’я та телефон та віділення пошти.");
       return;
     }
 
@@ -61,20 +73,46 @@
     })
       .then((res) => res.json())
       .then(() => {
-        alert("✅ Замовлення успішно надіслано!");
+        // alert("✅ Замовлення успішно надіслано!");
+        customAlert("✅ Замовлення успішно надіслано!");
         // очистка корзины
         // localStorage.removeItem("cart");
         // cart = []; // глобальная переменная cart из cart.js
         window.cart = []; // синхронизация
 
         localStorage.removeItem("cart");
-        document.getElementById("cart-items").innerHTML = "";
-        document.getElementById("cart-total").textContent = "";
+        // document.getElementById("cart-items").innerHTML = "";
+        // document.getElementById("cart-total").textContent = "";
         // nameInput.value = "";
         // phoneInput.value = "";
         document.getElementById("cart-count").textContent = "0";
         if (window.closeCartModal) window.closeCartModal();
       })
-      .catch(() => alert("❌ Помилка при відправці замовлення."));
+      .catch(
+        () => customAlert("❌ Помилка при відправці замовлення.")
+        // alert("❌ Помилка при відправці замовлення.")
+      );
   });
 })();
+function addToCart(id) {
+  var product = (window.products || []).find(function (p) {
+    return p.id === id;
+  });
+  if (!product) return customAlert("Товар не знайдено");
+  alert("Товар не знайдено");
+
+  var select = document.getElementById("opt-" + id);
+  var price = Number(select.value);
+  var optionText = select.options[select.selectedIndex].text.split(" — ")[0];
+
+  cart.push({
+    id: product.id,
+    name: product.name,
+    option: optionText,
+    price: price,
+  });
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+  updateCartCount();
+  alert("Додано до корзини");
+}
