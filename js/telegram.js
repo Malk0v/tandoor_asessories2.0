@@ -5,14 +5,6 @@ const { cart, updateCartCount } = require("./cart");
 
 // telegram.js — отправка заказа с именем и телефоном
 
-function customAlert(message) {
-  const alertBox = document.createElement("div");
-  alertBox.className = "custom-alert";
-  alertBox.textContent = message;
-  document.body.appendChild(alertBox);
-  setTimeout(() => alertBox.remove(), 3000);
-}
-
 (function () {
   const TOKEN = "6118003524:AAHjYaqFCkQEhg4QEwX4PBp6iGMR2q0uJjw"; // ← подставь свой токен
   const CHAT_ID = "-1001863675273"; // ← подставь свой chat_id
@@ -41,7 +33,7 @@ function customAlert(message) {
 
     if (!name || !phone || !post) {
       customAlert("Будь ласка, введіть ім’я та телефон та віділення пошти ‼️");
-      // alert("Будь ласка, введіть ім’я та телефон та віділення пошти.");
+      alert("Будь ласка, введіть ім’я та телефон та віділення пошти.");
       return;
     }
 
