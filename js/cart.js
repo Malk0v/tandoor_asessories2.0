@@ -1,5 +1,3 @@
-// cart.js
-
 function customAlert(message) {
   const alertBox = document.createElement("div");
   alertBox.className = "custom-alert";
