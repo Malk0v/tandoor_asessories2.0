@@ -1,9 +1,10 @@
-// var token = "6118003524:AAHjYaqFCkQEhg4QEwX4PBp6iGMR2q0uJjw";
-//     var chatId = "-1001863675273";
-
-const { cart, updateCartCount } = require("./cart");
-
-// telegram.js — отправка заказа с именем и телефоном
+function customAlert(message) {
+  const alertBox = document.createElement("div");
+  alertBox.className = "custom-alert";
+  alertBox.textContent = message;
+  document.body.appendChild(alertBox);
+  setTimeout(() => alertBox.remove(), 3000);
+}
 
 (function () {
   const TOKEN = "6118003524:AAHjYaqFCkQEhg4QEwX4PBp6iGMR2q0uJjw"; // ← подставь свой токен
@@ -27,13 +28,14 @@ const { cart, updateCartCount } = require("./cart");
     const text = postText.value.trim();
 
     if (!cart.length) {
-      alert("Корзина порожня!");
+      customAlert("Корзина порожня!");
+      //alert("Корзина порожня!");
       return;
     }
 
     if (!name || !phone || !post) {
       customAlert("Будь ласка, введіть ім’я та телефон та віділення пошти ‼️");
-      alert("Будь ласка, введіть ім’я та телефон та віділення пошти.");
+      //alert("Будь ласка, введіть ім’я та телефон та віділення пошти.");
       return;
     }
 
@@ -65,7 +67,7 @@ const { cart, updateCartCount } = require("./cart");
     })
       .then((res) => res.json())
       .then(() => {
-        // alert("✅ Замовлення успішно надіслано!");
+        //alert("✅ Замовлення успішно надіслано!");
         customAlert("✅ Замовлення успішно надіслано!");
         // очистка корзины
         // localStorage.removeItem("cart");
@@ -82,7 +84,7 @@ const { cart, updateCartCount } = require("./cart");
       })
       .catch(
         () => customAlert("❌ Помилка при відправці замовлення.")
-        // alert("❌ Помилка при відправці замовлення.")
+        //alert("❌ Помилка при відправці замовлення.")
       );
   });
 })();
@@ -90,8 +92,9 @@ function addToCart(id) {
   var product = (window.products || []).find(function (p) {
     return p.id === id;
   });
-  if (!product) return customAlert("Товар не знайдено");
-  alert("Товар не знайдено");
+  if (!product) return customAlert("❌ Товар не знайдено");
+
+  //alert("Товар не знайдено");
 
   var select = document.getElementById("opt-" + id);
   var price = Number(select.value);
@@ -106,5 +109,6 @@ function addToCart(id) {
 
   localStorage.setItem("cart", JSON.stringify(cart));
   updateCartCount();
-  alert("Додано до корзини");
+  customAlert("Додано до корзини");
+  //alert("Додано до корзини");
 }
