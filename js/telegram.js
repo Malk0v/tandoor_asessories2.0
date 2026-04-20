@@ -42,7 +42,7 @@ function customAlert(message) {
     let message = `<b>🛍 Нове замовлення</b>\n\n`;
     message += `<b>👤 Ім’я:</b> ${name}\n`;
     message += `<b>📞 Телефон:</b> ${phone}\n\n`;
-    message += `<b>📦В ідправляти:</b> ${post}\n\n`;
+    message += `<b>📦Відправляти:</b> ${post}\n\n`;
     message += `<b>💬 Коментар:</b> ${text}\n\n`;
     message += `<b>Товари:</b>\n`;
 
@@ -83,7 +83,7 @@ function customAlert(message) {
         if (window.closeCartModal) window.closeCartModal();
       })
       .catch(
-        () => customAlert("❌ Помилка при відправці замовлення.")
+        () => customAlert("❌ Помилка при відправці замовлення."),
         //alert("❌ Помилка при відправці замовлення.")
       );
   });
