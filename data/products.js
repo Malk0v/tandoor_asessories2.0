@@ -27,7 +27,7 @@ window.productsData = [
     image: "img/con.jpg",
     options: [
       {
-        diameter: "1",
+        diameter: "Ціна",
         price: 100,
       },
     ],
@@ -570,5 +570,35 @@ window.productsData = [
       },
     ],
     category: "Чохол",
+  },
+  {
+    id: 15,
+    name: "Шампур",
+    description: "Шампур до тандиру. Ширина 2см. Товщина 2мм",
+    image: "img/shampyr.jpg",
+    options: [
+      {
+        diameter: "Довжина 40см",
+        price: 45,
+      },
+      {
+        diameter: "Довжина 50см",
+        price: 50,
+      },
+    ],
+    category: "Шампур",
+  },
+  {
+    id: 16,
+    name: "Термометр",
+    description: "Шампур до тандиру. Ширина 2см. Товщина 2мм",
+    image: "img/termo.jpg",
+    options: [
+      {
+        diameter: "Ціна",
+        price: 300,
+      },
+    ],
+    category: "Термометр",
   },
 ];
