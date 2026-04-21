@@ -591,7 +591,7 @@ window.productsData = [
   {
     id: 16,
     name: "Термометр",
-    description: "Шампур до тандиру. Ширина 2см. Товщина 2мм",
+    description: "Термометр для тандиру",
     image: "img/termo.jpg",
     options: [
       {
