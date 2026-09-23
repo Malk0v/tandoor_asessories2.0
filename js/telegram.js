@@ -7,7 +7,7 @@ function customAlert(message) {
 }
 
 (function () {
-  const TOKEN = "6118003524:AAHjYaqFCkQEhg4QEwX4PBp6iGMR2q0uJjw"; // ← подставь свой токен
+  const TOKEN = "8866562392:AAHaTE4wvfCB8K0ml0qgd_3jbh9m5B6Cum8"; // ← подставь свой токен
   const CHAT_ID = "-1001863675273"; // ← подставь свой chat_id
   const URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
